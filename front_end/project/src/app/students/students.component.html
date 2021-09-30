@@ -1,0 +1,37 @@
+ <a class="btn btn-info" routerLink="/teacher">Register as Teacher</a>
+ <br>
+ <div>
+        .
+ </div>
+ <a class=" btn btn-info" routerLink="/students">Register as Student</a>
+<h4 class="container">Registeration for Student</h4>
+        <form class="form container">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input class="form-control" type="text" name="name" id="name" [(ngModel)] = "student['name']">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input class="form-control" type="date" name="dob" id="dob" [(ngModel)] = "student['dob']">
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input class="form-control" type="number" name="contact" id="contact" [(ngModel)] = "student['contactNumber']">
+            </div>
+            <div class="form-group">
+                <label for="fname">Father's Name:</label>
+                <input class="form-control" type="text" name="fname" id="fname" [(ngModel)] = "student['fatherName']">
+            </div>
+            <div class="form-group">
+                <label for="mName">Mother's Name:</label>
+                <input class="form-control" type="text" name="mName" id="mName" [(ngModel)] = "student['motherName']">
+            </div>
+            <div><br></div>
+            <div class="form-group">
+                <button class="btn btn-primary" (click) = "addStudent()">Register</button>
+            </div>
+        </form>
+        <div *ngIf="message!=null" class="text-center container text-success">
+            Registered as {{message}}
+        </div>
+        

@@ -1,0 +1,10 @@
+drop database if exists abc;
+create database abc;
+use abc;
+create table admin(user_name varchar(45) PRIMARY_KEY, password varchar(45));
+create table student(id int PRIMARY_KEY AUTO_INCREMENT, name varchar(45), dob date, contact_number int,father_name varchar(45), mother_name(45));
+create table teacher(id int PRIMARY_KEY AUTO_INCREMENT,name varchar(45),age int,contact int);
+
+INSERT INTO ADMIN(USER_NAME,PASSSWORD) VALUES(ADMIN,admin123);
+INSERT INTO STUDENT(ID,NAME,DOB,CONTACT_NUMBER,FATHER_NAME,MOTHER_NAME) VALUES(1,"TEJINDER","1999-12-12",998877665,"NACHHATAR SINGH","HARJINDER KAUR");
+INSERT INTO TEACHER(ID,NAME,AGE,CONTACT) VALUES(1001,"TEJINDER",31,223344556); 
